@@ -5,13 +5,15 @@ on:
   push:
     branches: ["main"] # Ensure this matches your repository's primary branch
 
+permissions:
+  contents: read    # Needed for actions/checkout to read your code
+  pages: write      # Needed for actions/deploy-pages to upload the site
+  id-token: write   # Needed for OIDC authentication by deploy-pages
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
+    # The job-level 'permissions' block is removed because it's defined above.
 
     steps:
       - name: Checkout
