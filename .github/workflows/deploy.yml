@@ -1,0 +1,46 @@
+
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: ["main"] # Ensure this matches your repository's primary branch
+
+permissions:
+  contents: read    # Needed for actions/checkout to read your code
+  pages: write      # Needed for actions/deploy-pages to upload the site
+  id-token: write   # Needed for OIDC authentication by deploy-pages
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    # The job-level 'permissions' block is removed because it's defined above.
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      # Setup Node.js environment
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' 
+          cache: 'npm'
+
+      # Install dependencies and run the Vite build
+      - name: Install dependencies
+        run: npm ci
+      - name: Build project
+        run: npm run build
+
+      # Deploy the static files from the 'dist' folder
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist' # The default output folder for Vite
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
