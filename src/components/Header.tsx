@@ -15,6 +15,7 @@ const Header = () => {
   const navItems = [
     { sectionId: 'hero', label: 'About' },
     { sectionId: 'skills', label: 'Skills' },
+    { sectionId: 'about', label: 'Experience' },
     { sectionId: 'projects', label: 'Projects' },
     { sectionId: 'education', label: 'Education' },
     { sectionId: 'blog', label: 'Certifications' }
@@ -30,7 +31,7 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-9">
             {navItems.map((item) => (
               <button
                 key={item.sectionId} // ✅ Corrected

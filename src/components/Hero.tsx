@@ -89,16 +89,10 @@ const Hero = () => {
 
             <div className="flex flex-wrap justify-center lg:justify-start gap-4 mb-8">
               <a 
-                href="#contact"
-                className="group bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
-              >
-                Get In Touch
-              </a>
-              <a 
                 href={resume}        // <-- your actual PDF path
                 target="_blank"           // <-- opens in new tab
                 rel="noopener noreferrer" // <-- security best practice
-                className="group bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white px-8 py-3 rounded-full font-semibold border-2 border-white/30 hover:border-white/50 transition-all duration-300 hover:scale-105"
+                className="group bg-blue-200 hover:bg-blue-600 text-black px-8 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
               >
                 Check Resume
               </a>

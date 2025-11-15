@@ -15,12 +15,12 @@ function App() {
       <Header />
       <div className="min-h-screen">
         <Hero />
-        {/* <About /> */}
         <Skills />
+        <About />
         <Projects />
         <Education />
         <Blog />
-        <Contact />
+        {/* <Contact /> */}
         <Footer />
       </div>
     </div>
