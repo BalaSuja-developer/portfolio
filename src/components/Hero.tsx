@@ -1,87 +1,186 @@
 import React from 'react';
-import { Github, Linkedin, Mail, Code2, Database, TestTube } from 'lucide-react';
+import { Github, Linkedin, Mail, Code, Code2, Database, TestTube } from 'lucide-react';
+import image from '../components/image/photo-output.jpeg';
+import resume from '../components/documents/resume.pdf';
+import LeetIcon from '../components/icons/leetcode.png';
+import HackIcon from '../components/icons/hackerrank.png';
+import TiltWrapper from './TiltWrapper';
+import { Typewriter } from 'react-simple-typewriter';
 
+// Hero Component
 const Hero = () => {
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 flex items-center justify-center overflow-hidden">
-      {/* Background Pattern */}
+    
+    <section id="hero" className="relative min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 flex items-center overflow-hidden pt-16">
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-400/20 to-emerald-400/20"></div>
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl animate-pulse"></div>
       </div>
 
-      <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
-        {/* Profile Image Placeholder */}
-        <div className="mb-8 flex justify-center">
-          <div className="w-32 h-32 bg-gradient-to-br from-blue-500 to-emerald-500 rounded-full flex items-center justify-center shadow-2xl border-4 border-white/20">
-            <Code2 className="w-16 h-16 text-white" />
-          </div>
-        </div>
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <TiltWrapper>
+            <div className="flex justify-center lg:justify-start order-1 lg:order-1">
+              <div className="relative">
+                {/* Glow Background */}
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-emerald-500 rounded-full blur-2xl opacity-20 scale-110 animate-pulse"></div>
+                <div className="absolute -inset-4 bg-gradient-to-br from-blue-400/30 to-emerald-400/30 rounded-full blur-xl"></div>
 
-        {/* Main Tagline */}
-        <div> <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight" >Bala Suja K</h1></div>
-        <h3 className="text-2xl md:text-4xl font-bold text-white mb-6 leading-tight">
-          Java Fullstack Engineer
-        </h3>
-        <div className="text-2xl md:text-2xl text-blue-200 mb-8 font-light">
-          Test-Driven Solutions for Complex Domains
-        </div>
-        
-        {/* Subtitle */}
-        <p className="text-xl text-slate-300 max-w-3xl mx-auto mb-12 leading-relaxed">
-          Engineering highly reliable systems for logistics and healthcare through production-grade 
-          microservices, workflow automation frameworks, and meticulously tested APIs.
-        </p>
+                {/* MAIN CIRCLE (ONLY ONE) */}
+                <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 
+                                bg-gradient-to-br from-blue-500 to-emerald-500
+                                rounded-full flex items-center justify-center
+                                shadow-2xl border-8 border-white/20 overflow-hidden">
+                  <img
+                    src={image}
+                    alt="Bala Suja K"
+                    className="w-full h-full rounded-full object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+          </TiltWrapper>
 
-        {/* Key Stats */}
-        <div className="flex flex-wrap justify-center gap-8 mb-12">
-          <div className="flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full border border-white/20">
-            <TestTube className="w-5 h-5 text-blue-400" />
-            <span className="text-white font-semibold">Test-Driven Excellence</span>
-          </div>
-          <div className="flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full border border-white/20">
-            <Database className="w-5 h-5 text-emerald-400" />
-            <span className="text-white font-semibold">Production-Grade Systems</span>
-          </div>
-          <div className="flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full border border-white/20">
-            <Code2 className="w-5 h-5 text-purple-400" />
-            <span className="text-white font-semibold">Technical Leadership</span>
-          </div>
-        </div>
+          <div className="text-center lg:text-left order-2 lg:order-2">
+            
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight">
+              Bala Suja K
+            </h1>
+            <div>
+              <h2 className="text-2xl text-slate-200 font-bold text-slate-100">
+                <div className="relative inline-block">
+                  <span>I am a </span>
+                  <Typewriter
+                    words={['Java Backend Engineer', 'Backend & Cloud Engineer', 'Microservices Engineer','Full Stack Java Engineer']}
+                    loop={true}
+                    cursor
+                    cursorStyle="|"
+                    typeSpeed={80}
+                    deleteSpeed={50}
+                    delaySpeed={1500}
+                  />
+                </div>
+                
+              </h2>
 
-        {/* Social Links */}
-        <div className="flex justify-center space-x-6">
-          <a 
-            href="https://github.com/BalaSuja-developer" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="group bg-white/10 backdrop-blur-sm p-4 rounded-full border border-white/20 hover:bg-white/20 hover:scale-110 transition-all duration-300"
-          >
-            <Github className="w-6 h-6 text-white group-hover:text-blue-200" />
-          </a>
-          <a 
-            href="https://www.linkedin.com/in/balasuja-k/" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="group bg-white/10 backdrop-blur-sm p-4 rounded-full border border-white/20 hover:bg-white/20 hover:scale-110 transition-all duration-300"
-          >
-            <Linkedin className="w-6 h-6 text-white group-hover:text-blue-200" />
-          </a>
-          <a 
-            href="mailto:balasujak@gmail.com" 
-            className="group bg-white/10 backdrop-blur-sm p-4 rounded-full border border-white/20 hover:bg-white/20 hover:scale-110 transition-all duration-300"
-          >
-            <Mail className="w-6 h-6 text-white group-hover:text-blue-200" />
-          </a>
-        </div>
+            </div>
 
-        {/* Scroll Indicator
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-white/60 rounded-full mt-2 animate-pulse"></div>
+            <h2 className="text-2ml text-slate-200 font-bold text-slate-100">2+ Years of Experience</h2>
+            <p className="text-lg sm:text-ml text-blue-100 mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+             I build scalable backend services, cloud‑ready microservices, 
+             and modern web applications using Java, Spring Boot, React, and cloud technologies.
+            </p>
+
+            {/* <div className="flex flex-wrap justify-center lg:justify-start gap-3 mb-8">
+              <div className="flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20">
+                <TestTube className="w-4 h-4 text-blue-400" />
+                <span className="text-white text-sm font-semibold">Test-Driven</span>
+              </div>
+              <div className="flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20">
+                <Database className="w-4 h-4 text-emerald-400" />
+                <span className="text-white text-sm font-semibold">Production-Grade</span>
+              </div>
+              <div className="flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20">
+                <Code2 className="w-4 h-4 text-purple-400" />
+                <span className="text-white text-sm font-semibold">Tech Leadership</span>
+              </div>
+            </div> */}
+
+            <div className="flex flex-wrap justify-center lg:justify-start gap-4 mb-8">
+              <a 
+                href="#contact"
+                className="group bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
+              >
+                Get In Touch
+              </a>
+              <a 
+                href={resume}        // <-- your actual PDF path
+                target="_blank"           // <-- opens in new tab
+                rel="noopener noreferrer" // <-- security best practice
+                className="group bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white px-8 py-3 rounded-full font-semibold border-2 border-white/30 hover:border-white/50 transition-all duration-300 hover:scale-105"
+              >
+                Check Resume
+              </a>
+            </div>
+
+            {/* <div className="flex justify-center lg:justify-start space-x-4">
+              <a 
+                href="https://github.com/bala-suja" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group bg-white/10 backdrop-blur-sm p-3 rounded-full border border-white/20 hover:bg-white/20 hover:scale-110 transition-all duration-300"
+              >
+                <Github className="w-5 h-5 text-white group-hover:text-blue-200" />
+              </a>
+              <a 
+                href="https://www.linkedin.com/in/balasuja-k/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group bg-white/10 backdrop-blur-sm p-3 rounded-full border border-white/20 hover:bg-white/20 hover:scale-110 transition-all duration-300"
+              >
+                <Linkedin className="w-5 h-5 text-white group-hover:text-blue-200" />
+              </a>
+              <a 
+                href="mailto:balasujak@gmail.com" 
+                className="group bg-white/10 backdrop-blur-sm p-3 rounded-full border border-white/20 hover:bg-white/20 hover:scale-110 transition-all duration-300"
+              >
+                <Mail className="w-5 h-5 text-white group-hover:text-blue-200" />
+              </a>
+            </div> */}
+            <div className="flex justify-center lg:justify-start space-x-9">
+              {/* LinkedIn */}
+              <a 
+                href="https://www.linkedin.com/in/balasuja-k/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group bg-white/10 backdrop-blur-sm p-3 rounded-full border border-white/20 hover:bg-white/20 hover:scale-110 transition-all duration-300"
+              >
+                <Linkedin className="w-5 h-5 text-black group-hover:text-blue-900" />
+              </a>
+
+              {/* GitHub */}
+              <a 
+                href="https://github.com/bala-suja" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group bg-white/10 backdrop-blur-sm p-3 rounded-full border border-white/20 hover:bg-white/20 hover:scale-110 transition-all duration-300"
+              >
+                <Github className="w-5 h-5 text-black group-hover:text-black-900" />
+              </a>
+
+              {/* LeetCode */}
+              <a 
+                href="https://leetcode.com/u/balasuja032000/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group bg-white/10 backdrop-blur-sm p-3 rounded-full border border-white/20 hover:bg-white/20 hover:scale-110 transition-all duration-300"
+              >
+                <img src={LeetIcon} alt="LeetCode" className="w-5 h-5 group-hover:text-orange-900" />
+              </a>
+
+              {/* HackerRank */}
+              <a 
+                href="https://www.hackerrank.com/profile/balasuja032000"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group bg-white/10 backdrop-blur-sm p-3 rounded-full border border-white/20 hover:bg-white/20 hover:scale-110 transition-all duration-300"
+              >
+                <img src={HackIcon} alt="HackerRank" className="w-5 h-5 group-hover:text-green-600" />
+              </a>
+
+              {/* Mail */}
+              <a 
+                href="mailto:balasujak@gmail.com" 
+                className="group bg-white/10 backdrop-blur-sm p-3 rounded-full border border-white/20 hover:bg-white/20 hover:scale-110 transition-all duration-300"
+              >
+                <Mail className="w-5 h-5 text-black group-hover:text-red-900" />
+              </a>
+            </div>
+
           </div>
-        </div> */}
+
+        </div>
       </div>
     </section>
   );

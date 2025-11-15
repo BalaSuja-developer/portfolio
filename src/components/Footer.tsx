@@ -53,7 +53,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a 
-                          href="https://github.com/BalaSuja-developer" 
+                          href="https://github.com/bala-suja" 
                           target="_blank" 
                           rel="noopener noreferrer"
                           className="group bg-white/10 backdrop-blur-sm p-4 rounded-full border border-white/20 hover:bg-white/20 hover:scale-110 transition-all duration-300"

@@ -90,7 +90,7 @@ const Contact = () => {
                   <Linkedin className="w-6 h-6 text-slate-600 group-hover:text-white" />
                 </a>
                 <a 
-                  href="https://github.com/BalaSuja-developer"
+                  href="https://github.com/bala-suja"
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="group bg-slate-100 hover:bg-slate-900 p-4 rounded-xl transition-all duration-300"

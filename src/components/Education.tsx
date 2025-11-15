@@ -1,7 +1,7 @@
 import React from 'react';
 import { GraduationCap, Award, Briefcase, TestTube, Zap, Target, LaptopIcon, BookOpen } from 'lucide-react';
 
-const Timeline = () => {
+const Education = () => {
   const milestones = [
     // {
     //   year: '2018-2021',
@@ -106,7 +106,7 @@ const Timeline = () => {
   ];
 
   return (
-    <section id="timeline" className="py-20 bg-slate-50">
+    <section id="education" className="py-20 bg-slate-50">
       <div className="max-w-4xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-slate-900 mb-4">Career Journey</h2>
@@ -160,4 +160,4 @@ const Timeline = () => {
   );
 };
 
-export default Timeline;
+export default Education;

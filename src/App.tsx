@@ -1,26 +1,28 @@
 import React from 'react';
+import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
-import Timeline from './components/Timeline';
-import TestingShowcase from './components/TestingShowcase';
+import Education from './components/Education';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen bg-white">
-      <Hero />
-      <About />
-      <Projects />
-      <Skills />
-      <Timeline />
-      <TestingShowcase />
-      <Blog />
-      <Contact />
-      <Footer />
+    <div className="relative">
+      <Header />
+      <div className="min-h-screen">
+        <Hero />
+        {/* <About /> */}
+        <Skills />
+        <Projects />
+        <Education />
+        <Blog />
+        <Contact />
+        <Footer />
+      </div>
     </div>
   );
 }
