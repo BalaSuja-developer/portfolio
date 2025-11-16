@@ -8,62 +8,109 @@ const Projects = () => {
 
   const projects = [
     {
-      id: 'sevilai',
-      title: 'Sevilai',
-      subtitle: 'Advanced Logistics Platform',
-      language: 'Java',
-      description: 'Architected and delivered a logistics platform defined by automation, reliability, and strict API security.',
-      longDescription: 'As the lead Java backend developer, I architected and delivered Sevilai—a logistics and booking platform defined by its automation, reliability, and strict API security. The platform consistently scaled to meet expanding usage while minimizing operational issues.',
-      image: sevilaiImage,
-      stack: ['Java 17', 'Spring Boot', 'PostgreSQL', 'Prometheus','Junit', 'Mockito'],
+      id: 'credit-card-default',
+      title: 'Credit Card Default Prediction',
+      subtitle: 'Machine Learning',
+      language: 'Python',
+      category: 'Academic',
+      description: 'A predictive analytics project that identifies whether a customer is likely to default on their credit card payment.',
+      longDescription: 'Built a comprehensive machine learning system for credit risk assessment, implementing end-to-end data science workflow from data cleaning to model deployment. The project demonstrates practical application of classification algorithms and model evaluation techniques.',
+      image: 'https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=800&q=80',
+      stack: ['Python', 'Pandas', 'NumPy', 'Scikit-Learn', 'Matplotlib', 'Jupyter'],
       testingPractices: [
-        'Comprehensive unit, integration, and contract testing with JUnit & Mockito',
-        'Database validation with Testcontainers for schema migrations',
-        'Prometheus-driven monitoring with proactive workflow event tracking'
+        'Performed extensive EDA and feature engineering',
+        'Implemented multiple classification models for comparison',
+        'Cross-validation and hyperparameter tuning',
+        'Model performance visualization and reporting'
       ],
       achievements: [
-        'RESTful interfaces with OIDC/JWT authentication',
-        'Advanced PostgreSQL schemas with enum and JSONB usage',
-        'Set new standards for backend testability and maintainability'
-      ],
-      // github: '#',
-      demo: 'http://www.sevilaitransport.com/'
+        'Data cleaning and preprocessing pipeline',
+        'Logistic Regression, Random Forest, and SVM implementations',
+        'Comprehensive model accuracy comparison',
+        'Interactive visualization of customer risk trends'
+      ]
     },
     {
-      id: 'inhlth',
-      title: 'INHLTH',
-      subtitle: 'Modern Healthcare Automation Suite',
-      language: 'Kotlin',
-      description: 'Designed and executed a healthcare platform emphasizing automation, security, and observability.',
-      longDescription: 'As principal Kotlin backend engineer, I designed and executed INHLTH, a healthcare platform emphasizing automation, security, and observability. The platform represents modern backend craftsmanship—fusing rapid delivery cycles with mission-critical quality.',
-      // image: 'https://images.pexels.com/photos/236380/pexels-photo-236380.jpeg?auto=compress&cs=tinysrgb&w=800',
-      image: inhlthImage,
-      stack: ['Kotlin DSL', 'Spring Boot', 'Temporal', 'PostgreSQL', 'GraphQL', 'Hasura'],
+      id: 'epost-office',
+      title: 'Smart E-Post Office System',
+      subtitle: 'Java Desktop Application',
+      language: 'Java',
+      category: 'Academic',
+      description: 'A desktop-based application that automates basic postal operations and customer services.',
+      longDescription: 'Developed a comprehensive postal management system with user authentication, parcel tracking, and automated cost calculation. The application demonstrates proficiency in Java desktop development and database integration.',
+      image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80',
+      stack: ['Java', 'JDBC', 'MySQL', 'Swing/JavaFX'],
       testingPractices: [
-        'MockK and property-based testing for business rule validation',
-        'Temporal workflow mocks for asynchronous event testing',
-        'Both REST and GraphQL API development and testing',
-        'Testcontainer suites for flexible clinical data models'
+        'User management for customers and postal staff',
+        'Real-time parcel tracking and delivery updates',
+        'Automated postage cost calculations',
+        'Database-backed transaction history'
       ],
       achievements: [
-        'Kotlin-first architecture with Spring Boot DSL for code clarity',
-        'Healthcare workflow automation (appointments, notifications, compliance)',
-        'PostgreSQL with custom enums and nested JSONB for clinical data',
-        'CI pipeline integration ensuring strict reliability and compliance'
+        'Full-featured user authentication system',
+        'Parcel booking and tracking functionality',
+        'Admin dashboard for record management',
+        'Lightweight and efficient desktop interface'
+      ]
+    },
+    {
+      id: 'techcompare',
+      title: 'TechCompare',
+      subtitle: 'Product Comparison Web Application',
+      language: 'TypeScript',
+      category: 'Personal',
+      description: 'A modern web app that allows users to compare software tools, tech stacks, or gadgets across multiple attributes.',
+      longDescription: 'Created a responsive product comparison platform with dynamic filtering, sorting, and API integration. The application showcases modern React development practices and clean UI/UX design principles.',
+      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80',
+      stack: ['React', 'TypeScript', 'Vite', 'Tailwind CSS'],
+      testingPractices: [
+        'Dynamic comparison table with filters',
+        'API-based data loading for products',
+        'Local state management for performance',
+        'Responsive and mobile-friendly design'
       ],
-      // github: '#',
-      demo: 'https://inhlth.com/'
+      achievements: [
+        'Clean, modern comparison interface',
+        'Efficient rendering with React optimization',
+        'API integration for product details',
+        'Cross-device compatibility'
+      ]
+    },
+    {
+      id: 'portfolio',
+      title: 'Portfolio Website',
+      subtitle: 'Personal Project',
+      language: 'TypeScript',
+      category: 'Personal',
+      description: 'A fully responsive and interactive developer portfolio showcasing skills, projects, and experience.',
+      longDescription: 'Designed and developed a modern portfolio website featuring custom animations, particle effects, and smooth interactions. The site demonstrates expertise in frontend development and modern web technologies.',
+      image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=800&q=80',
+      stack: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
+      testingPractices: [
+        'Custom animations and interactive UI',
+        'Particle background effects',
+        'Smooth scrolling and transitions',
+        'Performance-optimized build process'
+      ],
+      achievements: [
+        'Fully mobile-responsive layout',
+        'Modern design with engaging animations',
+        'Optimized build with Vite',
+        'Deployed on GitHub Pages'
+      ]
     }
   ];
 
   return (
-    <section id="projects" className="py-20 bg-slate-50">
+    <section id="projects" className="py-20 min-h-screen bg-gradient-to-br from-slate-100 to-slate-100">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-slate-900 mb-4">Featured Projects</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-emerald-500 mx-auto mb-8"></div>
+          <h2 className="text-4xl font-bold text-slate-900 mb-4">Projects</h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-emerald-500 mx-auto mb-8"></div>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            Production-ready platforms built with test-driven development and enterprise-grade reliability
+            I have worked on a variety of projects across backend, full-stack, and web development. 
+            My work includes building microservices, developing web applications, and delivering practical 
+            solutions used in real environments. Here are some of my key projects, and you can find more on my GitHub.
           </p>
         </div>
 
@@ -111,18 +158,18 @@ const Projects = () => {
                     >
                       <Github className="w-5 h-5" />
                     </a> */}
-                    <a 
+                    {/* <a 
                       href={project.demo}
                       target = "_blank"
                       rel="noopener noreferrer"
                       className="p-2 text-slate-500 hover:text-slate-900 hover:bg-slate-100 rounded-lg transition-colors"
                     >
-                      <ExternalLink className="w-5 h-5" />
-                    </a>
+                      <ExternalLink className="w-5 h-5" /> */}
+                    {/* </a> */}
                   </div>
                 </div>
 
-                <p className="text-blue-600 font-medium mb-3">{project.subtitle}</p>
+                <p className="text-purple-600 font-medium mb-3">{project.subtitle}</p>
                 <p className="text-slate-600 mb-4 leading-relaxed">{project.description}</p>
 
                 {/* Tech Stack */}
@@ -146,7 +193,7 @@ const Projects = () => {
                     
                     <div>
                       <h4 className="font-semibold text-slate-900 mb-2 flex items-center">
-                        <Shield className="w-4 h-4 mr-2 text-blue-500" />
+                        <Shield className="w-4 h-4 mr-2 text-purple-500" />
                         Testing Practices
                       </h4>
                       <ul className="space-y-1">
@@ -167,7 +214,7 @@ const Projects = () => {
                       <ul className="space-y-1">
                         {project.achievements.map((achievement, index) => (
                           <li key={index} className="flex items-start text-sm text-slate-600">
-                            <CheckCircle className="w-4 h-4 text-blue-500 mr-2 mt-0.5 flex-shrink-0" />
+                            <CheckCircle className="w-4 h-4 text-purple-500 mr-2 mt-0.5 flex-shrink-0" />
                             {achievement}
                           </li>
                         ))}
@@ -177,7 +224,7 @@ const Projects = () => {
                 </div>
 
                 {/* Read More Button */}
-                <button className="mt-4 text-blue-600 hover:text-blue-700 font-medium text-sm flex items-center group-hover:translate-x-1 transition-transform">
+                <button className="mt-4 text-purple-600 hover:text-purple-700 font-medium text-sm flex items-center group-hover:translate-x-1 transition-transform">
                   {activeProject === project.id ? 'Show Less' : 'Read More'}
                   <ExternalLink className="w-4 h-4 ml-1" />
                 </button>

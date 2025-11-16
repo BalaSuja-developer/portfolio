@@ -5,16 +5,16 @@ const GalaxyBackground = () => {
   return (
     <Canvas
       className="absolute inset-0"
-      camera={{ position: [0, 0, 1] }}
+      camera={{ position: [1, 1, 1] }}
     >
       <Stars
-        radius={120}
-        depth={80}
-        count={7000}
-        factor={4}
-        saturation={0}
+        radius={300}
+        depth={90}
+        count={700000}
+        factor={8}
+        saturation={2}
         fade
-        speed={1}
+        speed={8}
       />
     </Canvas>
   );

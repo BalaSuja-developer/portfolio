@@ -1,159 +1,218 @@
 import React from 'react';
-import { GraduationCap, Award, Briefcase, TestTube, Zap, Target, LaptopIcon, BookOpen } from 'lucide-react';
+import { BookOpen, Calendar, MapPin, ChevronRight, Award, GraduationCap, Trophy, Globe } from 'lucide-react';
+import sclLogo from '../components/icons/scl.png';
+import msuLogo from '../components/icons/msu.jpeg';
+import clgLogo from '../components/icons/clg.jpg';
+import chittiLogo from '../components/icons/chitti.png';
 
 const Education = () => {
-  const milestones = [
-    // {
-    //   year: '2018-2021',
-    //   title: 'Educational Foundation',
-    //   subtitle: 'Computer Science Foundation',
-    //   description: 'Established strong fundamentals in algorithms, data structures, and software engineering principles.',
-    //   icon: GraduationCap,
-    //   color: 'from-purple-500 to-purple-600',
-    //   achievements: ['Advanced Algorithm Design', 'Object-Oriented Programming', 'Database Systems']
-    // },
-    // {
-    //   year: '2020-2021',
-    //   title: 'Backend Specialization',
-    //   subtitle: 'Java & Kotlin Mastery',
-    //   description: 'Developed expertise in enterprise Java development and modern Kotlin programming.',
-    //   icon: Award,
-    //   color: 'from-blue-500 to-blue-600',
-    //   achievements: ['Spring Boot Mastery', 'Microservices Architecture', 'API Design Patterns']
-    // },
-    // {
-    //   year: '2021-2022',
-    //   title: 'Sevilai Leadership',
-    //   subtitle: 'Advanced Logistics Platform',
-    //   description: 'Architected and delivered comprehensive logistics automation with workflow orchestration.',
-    //   icon: Briefcase,
-    //   color: 'from-emerald-500 to-emerald-600',
-    //   achievements: ['Temporal Workflow Automation', 'OIDC/JWT Security', 'PostgreSQL Optimization']
-    // },
-    // {
-    //   year: '2022-2023',
-    //   title: 'Quality Engineering Excellence',
-    //   subtitle: 'Test-Driven Development Leadership',
-    //   description: 'Pioneered comprehensive testing strategies across microservices and workflow automation.',
-    //   icon: TestTube,
-    //   color: 'from-teal-500 to-teal-600',
-    //   achievements: ['CI/CD Quality Gates', 'Contract Testing', 'Observability Integration']
-    // },
-    // {
-    //   year: '2023-2024',
-    //   title: 'INHLTH Innovation',
-    //   subtitle: 'Modern Healthcare Automation',
-    //   description: 'Designed healthcare platform with Kotlin-first architecture and strict compliance requirements.',
-    //   icon: Zap,
-    //   color: 'from-orange-500 to-orange-600',
-    //   achievements: ['Kotlin DSL Architecture', 'GraphQL Integration', 'Healthcare Compliance']
-    // },
-    // {
-    //   year: '2024-Present',
-    //   title: 'Technical Leadership',
-    //   subtitle: 'Backend Architecture & Mentorship',
-    //   description: 'Leading engineering excellence initiatives while mentoring teams in modern development practices.',
-    //   icon: Target,
-    //   color: 'from-red-500 to-red-600',
-    //   achievements: ['Cross-Project Expertise', 'Team Mentorship', 'Knowledge Sharing']
-    // }
+  const educations = [
     {
-      year: '2018-2021',
-      title: 'BCA Completed',
-      subtitle: 'Sri Parasakthi College, Courtallam',
-      description: 'Built a solid foundation in computer science, covering programming, data structures, and basic software development.',
-      icon: GraduationCap,
-      color: 'from-purple-500 to-purple-600',
-      achievements: ['Graduated with BCA', 'Core Java & C Programming', 'Database Concepts']
+      institution: "Chitti Training Program",
+      degree: "STEM Training",
+      period: "2025",
+      duration: "Completed",
+      location: "Training Program",
+      grade: "Certified",
+      description: "Completed hands-on STEM training focused on real-world programming and problem-solving techniques.",
+      achievements: [
+        "Hands-on Coding",
+        "Team Projects",
+        "STEM Certification"
+      ],
+      subjects: ["Programming", "Problem Solving", "Team Collaboration"],
+      logo: chittiLogo,
+      logoColor: "from-yellow-500 to-yellow-600",
+      current: false
     },
     {
-      year: '2021-2023',
-      title: 'MCA Completed',
-      subtitle: 'Manonmaniam Sundaranar University, Tirunelveli',
-      description: 'Advanced studies in computer applications with emphasis on software engineering, web development, and project work.',
-      icon: GraduationCap,
-      color: 'from-purple-600 to-purple-700',
-      achievements: ['Graduated with MCA', 'Web Technologies', 'Mini & Major Projects']
+      institution: "Manonmaniam Sundaranar University",
+      degree: "Masters in Computer Application",
+      period: "July 2021 - June 2023",
+      duration: "2 yrs",
+      location: "Tirunelveli, Tamil Nadu, India",
+      grade: "7.98 CGPA",
+      description: "Advanced studies in computer applications with focus on software development, algorithms, and modern computing paradigms.",
+      achievements: [
+        "Specialized in advanced software development",
+        "Completed research projects in modern computing",
+        "Developed expertise in algorithms and data structures"
+      ],
+      subjects: ["Advanced Java", "Software Engineering", "Data Mining", "Cloud Computing", "AI & ML"],
+      logo: msuLogo,
+      logoColor: "from-purple-500 to-purple-700",
+      current: false
     },
     {
-      year: 'Jan 2023 - Feb 2023',
-      title: 'Intern',
-      subtitle: 'Bluescope Information Technology (P) Ltd',
-      description: 'Completed internship as a Full Stack Developer, gaining practical experience in both frontend and backend development.',
-      icon: Briefcase,
-      color: 'from-green-500 to-green-600',
-      achievements: ['Worked on live projects', 'Frontend & Backend Exposure', 'Agile Practice']
+      institution: "Sri Parasakthi College",
+      degree: "Bachelors in Computer Application",
+      period: "July 2018 - June 2021",
+      duration: "3 yrs",
+      location: "Courtallam, Tenkasi, Tamil Nadu, India",
+      grade: "8.02 CGPA",
+      description: "Comprehensive undergraduate program covering fundamentals of computer science, programming, and application development.",
+      achievements: [
+        "Strong foundation in computer science fundamentals",
+        "Developed multiple academic projects",
+        "Participated in coding competitions and workshops"
+      ],
+      subjects: ["Java", "C++", "Database Management", "Web Development", "Data Structures"],
+      logo: clgLogo,
+      logoColor: "from-purple-500 to-purple-700",
+      current: false
     },
     {
-      year: 'Dec 2023 - Present',
-      title: 'Full Stack Developer',
-      subtitle: 'KADIT Innovations',
-      description: 'Working as a Full Stack Developer on enterprise applications using Java, Spring Boot, PostgreSQL, and React.js.',
-      icon: LaptopIcon,
-      color: 'from-blue-500 to-blue-600',
-      achievements: ['REST API Development', 'UI Collaboration', 'Database Design']
-    },
-    {
-      year: '2025',
-      title: 'STEM Training',
-      subtitle: 'Chitti Training Program',
-      description: 'Completed hands-on STEM training focused on real-world programming and problem-solving techniques.',
-      icon: BookOpen,
-      color: 'from-yellow-500 to-yellow-600',
-      achievements: ['Hands-on Coding', 'Team Projects', 'STEM Certification']
+      institution: "St. Micheals [G] Hr.Sec. School",
+      degree: "Higher Secondary Certificate (HSC)",
+      period: "July 2016 - June 2018",
+      duration: "2 yrs",
+      location: "Tenkasi, Tamil Nadu, India",
+      grade: "80.9%",
+      description: "Completed Higher Secondary Education with 80.9%, focusing on core subjects: Computer Science, Physics, Mathematics, and Chemistry.",
+      achievements: [
+        "Achieved 80.9% in board examinations",
+        "Strong performance in science and mathematics",
+        "Developed interest in computer science"
+      ],
+      subjects: ["Computer Science", "Physics", "Mathematics", "Chemistry"],
+      logo: sclLogo,
+      logoColor: "from-green-500 to-green-700",
+      current: false
     }
-
   ];
 
   return (
-    <section id="education" className="py-20 bg-slate-50">
-      <div className="max-w-4xl mx-auto px-6">
+    <section id="education" className="bg-gradient-to-br from-slate-100 to-slate-100 py-20">
+      <div className="max-w-5xl mx-auto px-6">
+        {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-slate-900 mb-4">Career Journey</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-emerald-500 mx-auto mb-8"></div>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            From foundational education to senior backend architect - a journey marked by testing excellence and continuous innovation
+          <h2 className="text-4xl font-bold text-slate-900 mb-4">Educational Journey</h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-purple-500 mx-auto mb-8"></div>
+          <p className="text-slate-600 text-lg max-w-2xl mx-auto">
+            A foundation built on knowledge, dedication, and continuous learning
           </p>
         </div>
 
+        {/* Vertical Timeline */}
         <div className="relative">
-          {/* Timeline Line */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-blue-500 to-emerald-500 rounded-full"></div>
+          {/* Vertical Line */}
+          <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-yellow-500 via-purple-500 via-purple-500 to-green-500 transform md:-translate-x-1/2"></div>
 
-          {milestones.map((milestone, index) => (
-            <div key={index} className={`relative flex items-center mb-16 ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
-              {/* Timeline Node */}
-              <div className="absolute left-1/2 transform -translate-x-1/2 w-16 h-16 bg-white rounded-full border-4 border-slate-200 flex items-center justify-center shadow-lg z-10">
-                <div className={`w-10 h-10 bg-gradient-to-r ${milestone.color} rounded-full flex items-center justify-center`}>
-                  <milestone.icon className="w-5 h-5 text-white" />
-                </div>
-              </div>
-
-              {/* Content Card */}
-              <div className={`w-5/12 ${index % 2 === 0 ? 'mr-auto pr-8' : 'ml-auto pl-8'}`}>
-                <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border border-slate-200">
-                  {/* Year Badge */}
-                  <div className={`inline-block px-3 py-1 bg-gradient-to-r ${milestone.color} text-white text-sm font-semibold rounded-full mb-3`}>
-                    {milestone.year}
+          {/* Timeline Items */}
+          <div className="space-y-12">
+            {educations.map((edu, index) => (
+              <div key={index} className={`relative flex flex-col md:flex-row items-start ${
+                index % 2 === 0 ? 'md:flex-row-reverse' : ''
+              }`}>
+                {/* Timeline Dot with Logo */}
+                <div className="absolute left-8 md:left-1/2 transform -translate-x-1/2 z-10">
+                  <div className={`w-16 h-16 rounded-full border-4 border-white shadow-lg bg-gradient-to-br ${edu.logoColor} flex items-center justify-center`}>
+                    {/* <span className="text-white font-bold text-lg">{edu.logo}</span> */}
+                    <img 
+                      src={edu.logo} 
+                      alt="image"
+                      className="w-10 h-10 object-contain" 
+                    />
                   </div>
-                  
-                  <h3 className="text-xl font-bold text-slate-900 mb-2">{milestone.title}</h3>
-                  <p className="text-blue-600 font-medium mb-3">{milestone.subtitle}</p>
-                  <p className="text-slate-600 mb-4 leading-relaxed">{milestone.description}</p>
-                  
-                  {/* Achievements */}
-                  <div className="space-y-2">
-                    {milestone.achievements.map((achievement, achievementIndex) => (
-                      <div key={achievementIndex} className="flex items-center text-sm text-slate-700">
-                        <div className={`w-2 h-2 bg-gradient-to-r ${milestone.color} rounded-full mr-3`}></div>
-                        {achievement}
+                </div>
+
+                {/* Spacer for centering */}
+                <div className="hidden md:block md:w-1/2"></div>
+
+                {/* Content Card */}
+                <div className={`ml-24 md:ml-0 md:w-1/2 ${
+                  index % 2 === 0 ? 'md:pr-12' : 'md:pl-12'
+                }`}>
+                  <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-6 md:p-8 border-2 border-slate-200 hover:border-purple-400 relative group">
+                    {/* Connecting Line to Dot - Desktop Only */}
+                    <div className={`hidden md:block absolute top-12 w-12 h-0.5 bg-gradient-to-r ${
+                      index % 2 === 0 
+                        ? 'right-full from-purple-300 to-transparent' 
+                        : 'left-full from-transparent to-purple-300'
+                    }`}></div>
+
+                    {/* Institution Header */}
+                    <div className="flex items-start gap-3 mb-4">
+                      <div className={`w-12 h-12 rounded-lg bg-gradient-to-br ${edu.logoColor} flex items-center justify-center flex-shrink-0 shadow-md`}>
+                        {/* <span className="text-white font-bold text-sm">{edu.logo}</span> */}
+                        <img 
+                          src={edu.logo} 
+                          alt="image"
+                          className="w-10 h-10 object-contain" 
+                        />
                       </div>
-                    ))}
+                      <div className="flex-1">
+                        <h3 className="text-xl md:text-2xl font-bold text-slate-900 leading-tight group-hover:text-purple-600 transition-colors">
+                          {edu.degree}
+                        </h3>
+                        <div className="flex items-center gap-2 text-slate-700 font-semibold mt-1">
+                          <GraduationCap className="w-4 h-4 text-purple-500" />
+                          <span className="text-base">{edu.institution}</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Period & Location */}
+                    <div className="space-y-2 mb-4 text-sm">
+                      <div className="flex items-center gap-2 text-purple-600 font-semibold">
+                        <Calendar className="w-4 h-4" />
+                        <span>{edu.period}</span>
+                        <span className="text-slate-500">· {edu.duration}</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-slate-600">
+                        <MapPin className="w-4 h-4" />
+                        <span>{edu.location}</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-emerald-600 font-bold text-base">
+                        <Trophy className="w-4 h-4" />
+                        <span>Grade: {edu.grade}</span>
+                      </div>
+                    </div>
+
+                    {/* Description */}
+                    <p className="text-slate-600 leading-relaxed mb-5">{edu.description}</p>
+
+                    {/* Divider */}
+                    <div className="h-px bg-gradient-to-r from-purple-200 via-purple-200 to-purple-200 mb-5"></div>
+
+                    {/* Achievements */}
+                    <div className="mb-5">
+                      <div className="flex items-center gap-2 mb-3">
+                        <Award className="w-4 h-4 text-emerald-600" />
+                        <h4 className="text-sm font-bold text-slate-900 uppercase tracking-wide">Key Highlights</h4>
+                      </div>
+                      <ul className="space-y-2">
+                        {edu.achievements.map((achievement, idx) => (
+                          <li key={idx} className="flex items-start gap-2 text-slate-700 text-sm">
+                            <ChevronRight className="w-4 h-4 text-emerald-500 flex-shrink-0 mt-0.5" />
+                            <span className="leading-relaxed">{achievement}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    {/* Subjects */}
+                    <div>
+                      <div className="flex items-center gap-2 mb-3">
+                        <BookOpen className="w-4 h-4 text-purple-600" />
+                        <h4 className="text-sm font-bold text-slate-900 uppercase tracking-wide">Key Subjects</h4>
+                      </div>
+                      <div className="flex flex-wrap gap-2">
+                        {edu.subjects.map((subject, idx) => (
+                          <span 
+                            key={idx}
+                            className="px-3 py-1.5 bg-gradient-to-r from-purple-50 to-purple-50 text-purple-700 rounded-lg text-xs font-medium border border-purple-200 hover:border-purple-400 hover:shadow-md transition-all"
+                          >
+                            {subject}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
