@@ -139,34 +139,12 @@ const Projects = () => {
                     {project.language}
                   </span>
                 </div>
-
-                {/* Coverage Badge */}
-                {/* <div className="absolute top-4 right-4 flex items-center space-x-1 bg-emerald-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                  <TestTube className="w-4 h-4" />
-                  <span>{project.id === 'sevilai' ? '95%' : '98%'} Coverage</span>
-                </div> */}
               </div>
 
               {/* Project Content */}
               <div className="p-6">
                 <div className="flex items-center justify-between mb-3">
                   <h3 className="text-2xl font-bold text-slate-900">{project.title}</h3>
-                  <div className="flex space-x-2">
-                    {/* <a 
-                      href={project.github}
-                      className="p-2 text-slate-500 hover:text-slate-900 hover:bg-slate-100 rounded-lg transition-colors"
-                    >
-                      <Github className="w-5 h-5" />
-                    </a> */}
-                    {/* <a 
-                      href={project.demo}
-                      target = "_blank"
-                      rel="noopener noreferrer"
-                      className="p-2 text-slate-500 hover:text-slate-900 hover:bg-slate-100 rounded-lg transition-colors"
-                    >
-                      <ExternalLink className="w-5 h-5" /> */}
-                    {/* </a> */}
-                  </div>
                 </div>
 
                 <p className="text-purple-600 font-medium mb-3">{project.subtitle}</p>

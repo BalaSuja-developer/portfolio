@@ -10,7 +10,6 @@ import simplilearn from '../components/certifications/simplilearn1.png';
 import databricks from '../components/certifications/databricks.png';
 
 const Certifications = () => {
-  // Replace these placeholder URLs with your actual certificate images
   const certificates = [
     {
       id: 1,
@@ -112,8 +111,6 @@ const Certifications = () => {
             </div>
           ))}
         </div>
-
-
 
         {/* Hashnode Blog Section */}
         <div className="bg-gradient-to-r from-purple-600 to-emerald-600 rounded-3xl p-8 md:p-12 shadow-2xl">

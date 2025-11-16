@@ -95,7 +95,6 @@ const Education = () => {
 
         {/* Vertical Timeline */}
         <div className="relative">
-          {/* Vertical Line */}
           <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-yellow-500 via-purple-500 via-purple-500 to-green-500 transform md:-translate-x-1/2"></div>
 
           {/* Timeline Items */}
@@ -107,7 +106,6 @@ const Education = () => {
                 {/* Timeline Dot with Logo */}
                 <div className="absolute left-8 md:left-1/2 transform -translate-x-1/2 z-10">
                   <div className={`w-16 h-16 rounded-full border-4 border-white shadow-lg bg-gradient-to-br ${edu.logoColor} flex items-center justify-center`}>
-                    {/* <span className="text-white font-bold text-lg">{edu.logo}</span> */}
                     <img 
                       src={edu.logo} 
                       alt="image"
@@ -134,7 +132,6 @@ const Education = () => {
                     {/* Institution Header */}
                     <div className="flex items-start gap-3 mb-4">
                       <div className={`w-12 h-12 rounded-lg bg-gradient-to-br ${edu.logoColor} flex items-center justify-center flex-shrink-0 shadow-md`}>
-                        {/* <span className="text-white font-bold text-sm">{edu.logo}</span> */}
                         <img 
                           src={edu.logo} 
                           alt="image"

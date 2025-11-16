@@ -130,7 +130,6 @@ const Experience = () => {
                     {/* Company Header */}
                     <div className="flex items-start gap-3 mb-4">
                       <div className={`w-12 h-12 rounded-lg bg-gradient-to-br ${exp.logoColor} flex items-center justify-center flex-shrink-0 shadow-md`}>
-                        {/* <span className="text-white font-bold text-sm">{exp.logo}</span> */}
                         <img 
                           src={exp.logo} 
                           alt={exp.company} 

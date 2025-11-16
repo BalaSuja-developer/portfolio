@@ -74,56 +74,17 @@ const Hero = () => {
              and production-ready microservices with Spring Boot, Java, and cloud-native tools.
             </p>
 
-            {/* <div className="flex flex-wrap justify-center lg:justify-start gap-3 mb-8">
-              <div className="flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20">
-                <TestTube className="w-4 h-4 text-blue-400" />
-                <span className="text-white text-sm font-semibold">Test-Driven</span>
-              </div>
-              <div className="flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20">
-                <Database className="w-4 h-4 text-emerald-400" />
-                <span className="text-white text-sm font-semibold">Production-Grade</span>
-              </div>
-              <div className="flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20">
-                <Code2 className="w-4 h-4 text-purple-400" />
-                <span className="text-white text-sm font-semibold">Tech Leadership</span>
-              </div>
-            </div> */}
-
             <div className="flex flex-wrap justify-center lg:justify-start gap-4 mb-8">
               <a 
-                href={resume}        // <-- your actual PDF path
-                target="_blank"           // <-- opens in new tab
-                rel="noopener noreferrer" // <-- security best practice
+                href={resume}        
+                target="_blank"         
+                rel="noopener noreferrer" 
                 className="group bg-purple-200 hover:bg-purple-600 text-black px-8 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
               >
                 Check Resume
               </a>
             </div>
 
-            {/* <div className="flex justify-center lg:justify-start space-x-4">
-              <a 
-                href="https://github.com/bala-suja" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="group bg-white/10 backdrop-blur-sm p-3 rounded-full border border-white/20 hover:bg-white/20 hover:scale-110 transition-all duration-300"
-              >
-                <Github className="w-5 h-5 text-white group-hover:text-blue-200" />
-              </a>
-              <a 
-                href="https://www.linkedin.com/in/balasuja-k/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="group bg-white/10 backdrop-blur-sm p-3 rounded-full border border-white/20 hover:bg-white/20 hover:scale-110 transition-all duration-300"
-              >
-                <Linkedin className="w-5 h-5 text-white group-hover:text-blue-200" />
-              </a>
-              <a 
-                href="mailto:balasujak@gmail.com" 
-                className="group bg-white/10 backdrop-blur-sm p-3 rounded-full border border-white/20 hover:bg-white/20 hover:scale-110 transition-all duration-300"
-              >
-                <Mail className="w-5 h-5 text-white group-hover:text-blue-200" />
-              </a>
-            </div> */}
             <div className="flex justify-center lg:justify-start space-x-9">
               {/* LinkedIn */}
               <a 
