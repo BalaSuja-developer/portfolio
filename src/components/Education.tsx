@@ -31,7 +31,7 @@ const Education = () => {
       period: "July 2021 - June 2023",
       duration: "2 yrs",
       location: "Tirunelveli, Tamil Nadu, India",
-      grade: "7.98 CGPA",
+      grade: "8.16 CGPA",
       description: "Advanced studies in computer applications with focus on software development, algorithms, and modern computing paradigms.",
       achievements: [
         "Specialized in advanced software development",
@@ -49,7 +49,7 @@ const Education = () => {
       period: "July 2018 - June 2021",
       duration: "3 yrs",
       location: "Courtallam, Tenkasi, Tamil Nadu, India",
-      grade: "8.02 CGPA",
+      grade: "79.73 CWAM",
       description: "Comprehensive undergraduate program covering fundamentals of computer science, programming, and application development.",
       achievements: [
         "Strong foundation in computer science fundamentals",
@@ -67,7 +67,7 @@ const Education = () => {
       period: "July 2016 - June 2018",
       duration: "2 yrs",
       location: "Tenkasi, Tamil Nadu, India",
-      grade: "80.9%",
+      grade: "75.80%",
       description: "Completed Higher Secondary Education with 80.9%, focusing on core subjects: Computer Science, Physics, Mathematics, and Chemistry.",
       achievements: [
         "Achieved 80.9% in board examinations",

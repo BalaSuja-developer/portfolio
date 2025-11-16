@@ -18,7 +18,7 @@ const Header = () => {
     { sectionId: 'experience', label: 'Experience' },
     { sectionId: 'projects', label: 'Projects' },
     { sectionId: 'education', label: 'Education' },
-    { sectionId: 'blog', label: 'Certifications' }
+    { sectionId: 'certifications', label: 'Certifications' }
   ];
 
   return (

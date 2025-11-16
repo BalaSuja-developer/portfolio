@@ -50,7 +50,7 @@ const Experience = () => {
       company: "Bluescope Information Technology (P) Ltd",
       role: "Intern",
       period: "Jan 2023 - Feb 2023",
-      duration: "2 mos",
+      duration: "1 mos",
       location: "Tirunelveli, Tamil Nadu, India",
       workType: "On-site · Full-time",
       description: "Gained hands-on experience in software development and contributed to internal projects during the internship period.",
